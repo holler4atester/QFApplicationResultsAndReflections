@@ -42,16 +42,16 @@ Weatherbit specifications were first imported to Postman to view the specificati
 
 TEST CASES: 
 
+Reports 
+Simple HTML Reports of results like 
+<img width="995" alt="image" src="https://github.com/user-attachments/assets/2af7e8eb-1e6d-4436-99e0-d2bda68a26ee" />
+
 Regression Test Case - calling a single end point with dynamically built parameters, driven from a CSV file
 1 x simple regression case created to demonstrate using a CSV to drive lower level test steps to check the basic system functionality 
   * Boundary value testing 
   * Invalid/Valid inputs etc
 
-Sample of types of tests that can be executed via CSV: 
-
-Tests executed by Runner: 
-
-Results: (cmd line)
+Tests result samples: 
 
 <img width="1006" alt="image" src="https://github.com/user-attachments/assets/049a8801-09d6-4fff-82b0-3abfa0d6b9aa" />
 
@@ -62,10 +62,6 @@ Steps describe what's tested, for better reporting:
 
 Test can be executed via the PostMan App (without further setup) 
 <img width="869" alt="image" src="https://github.com/user-attachments/assets/4d5210b9-74e9-4e2f-aa7b-ad5c911830b9" />
-###
-
-Sample variables set up prior to execution with default values, so that tests can be run in PostMan app as well as on the newman runner with CSV file 
-<img width="597" alt="image" src="https://github.com/user-attachments/assets/af5f229f-d817-4a26-9115-e303dc4c6e3c" />
 
 Exploratory Data Driven Test Cases
 
@@ -89,5 +85,9 @@ If working on this project, I would **highlight the risks of sending an API key 
   * This will result in easier detection of secret information (In the case of weatherbit, the API key isn't as sensitive, so there are traces you can find of the API key in my project - even though initially I looked at setting it up in a .env file to protect it)
 
 There were some results where for Get Current Weather by PostalCode, where the **results didn't match the country of the country requested**
+Example: https://api.weatherbit.io/v2.0/current?postal_code=9311&country=AR&key=e9197decb15244cf96639fb69545768c
+Requested a postal code in Santa Cruz, Argentina (not near the Chile border)
+
+Result: Received results for Cochrane, Chile
   * I would investigate the backend services to see if the backend data handles those inputs, and where the issue is coming from (or if it is the only way it can be handled for some more obscure places)
     
