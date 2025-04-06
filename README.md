@@ -45,13 +45,20 @@ TEST CASES:
 Exploratory Data Driven Test Cases
 
 2 x simple tests were created as exploratory approach to seeing the behaviour of the end points: Get Current Weather, using PostalCode and Lat/Long informnation 
-  * Tests can be executed in Postman Application (default variables for PostalCode, Lat, Long are pre-defined as Scripts to run before the request is sent)
+  * Tests can be executed as-is in Postman Application
   * Tests can be executed in Postman Runner or Newman using bulk data files, sourced on the weatherbit site
 
 Regression Test Case - calling a single end point with dynamically built parameters, driven from a CSV file
 1 x simple regression case created to demonstrate using a CSV to drive lower level test steps to check the basic system functionality 
   * Boundary value testing 
   * Invalid/Valid inputs etc
+
+
+## To Do
+Given more time I'd: 
+* Demonstrate more test cases for regression 
+- Invalid PostCodes, Invalid API Keys etc
+* Make use of Postman's libraries to save and re-use test steps across different test cases
 
 ## Results 
 
