@@ -42,17 +42,37 @@ Weatherbit specifications were first imported to Postman to view the specificati
 
 TEST CASES: 
 
+Regression Test Case - calling a single end point with dynamically built parameters, driven from a CSV file
+1 x simple regression case created to demonstrate using a CSV to drive lower level test steps to check the basic system functionality 
+  * Boundary value testing 
+  * Invalid/Valid inputs etc
+
+Sample of types of tests that can be executed via CSV: 
+
+Tests executed by Runner: 
+
+Results: (cmd line)
+
+<img width="1006" alt="image" src="https://github.com/user-attachments/assets/049a8801-09d6-4fff-82b0-3abfa0d6b9aa" />
+
+<img width="499" alt="image" src="https://github.com/user-attachments/assets/3dfaec51-a68d-4f7b-93c1-b627f6e75a28" />
+
+Steps describe what's tested, for better reporting: 
+<img width="1016" alt="image" src="https://github.com/user-attachments/assets/d2b1e264-cbea-4e10-ad87-02db114de7ec" />
+
+Test can be executed via the PostMan App (without further setup) 
+<img width="869" alt="image" src="https://github.com/user-attachments/assets/4d5210b9-74e9-4e2f-aa7b-ad5c911830b9" />
+
+Sample variables set up prior to execution with default values, so that tests can be run in PostMan app as well as on the newman runner with CSV file 
+<img width="597" alt="image" src="https://github.com/user-attachments/assets/af5f229f-d817-4a26-9115-e303dc4c6e3c" />
+
 Exploratory Data Driven Test Cases
 
 2 x simple tests were created as exploratory approach to seeing the behaviour of the end points: Get Current Weather, using PostalCode and Lat/Long informnation 
   * Tests can be executed as-is in Postman Application
   * Tests can be executed in Postman Runner or Newman using bulk data files, sourced on the weatherbit site
 
-Regression Test Case - calling a single end point with dynamically built parameters, driven from a CSV file
-1 x simple regression case created to demonstrate using a CSV to drive lower level test steps to check the basic system functionality 
-  * Boundary value testing 
-  * Invalid/Valid inputs etc
-
+<img width="1012" alt="image" src="https://github.com/user-attachments/assets/3d8b661a-ada1-4c0e-8286-6e645dab815a" />
 
 ## To Do
 Given more time I'd: 
@@ -70,10 +90,3 @@ If working on this project, I would **highlight the risks of sending an API key 
 There were some results where for Get Current Weather by PostalCode, where the **results didn't match the country of the country requested**
   * I would investigate the backend services to see if the backend data handles those inputs, and where the issue is coming from (or if it is the only way it can be handled for some more obscure places)
     
-
-
-
-
-
-
-
