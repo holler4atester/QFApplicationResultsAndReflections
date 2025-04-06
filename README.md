@@ -43,13 +43,14 @@ Weatherbit specifications were first imported to Postman to view the specificati
 TEST CASES: 
 
 Reports 
-Simple HTML Reports of results like 
+3 x Simple HTML Reports available in /Reports folder, eg: 
 <img width="995" alt="image" src="https://github.com/user-attachments/assets/2af7e8eb-1e6d-4436-99e0-d2bda68a26ee" />
 
-Regression Test Case - calling a single end point with dynamically built parameters, driven from a CSV file
-1 x simple regression case created to demonstrate using a CSV to drive lower level test steps to check the basic system functionality 
-  * Boundary value testing 
-  * Invalid/Valid inputs etc
+Regression Test Case - calling a single end point with **dynamically built parameters, driven from a CSV file**
+1 x **simple regression case** (`Regression/GetCurrentWeather-Dynamically`) to demo using a CSV to drive lower level test steps to check the basic system functionality 
+  * **Boundary value testing** 
+  * **Invalid/Valid inputs etc**
+  * Tests check the **json schema definitions** are correct for success/failure/no location found results
 
 Tests result samples: 
 
@@ -68,6 +69,7 @@ Exploratory Data Driven Test Cases
 2 x simple tests were created as exploratory approach to seeing the behaviour of the end points: Get Current Weather, using PostalCode and Lat/Long informnation 
   * Tests can be executed as-is in Postman Application
   * Tests can be executed in Postman Runner or Newman using bulk data files, sourced on the weatherbit site
+  * Tests check the **json schema definitions** are correct
 
 <img width="1012" alt="image" src="https://github.com/user-attachments/assets/3d8b661a-ada1-4c0e-8286-6e645dab815a" />
 
