@@ -62,6 +62,7 @@ Steps describe what's tested, for better reporting:
 
 Test can be executed via the PostMan App (without further setup) 
 <img width="869" alt="image" src="https://github.com/user-attachments/assets/4d5210b9-74e9-4e2f-aa7b-ad5c911830b9" />
+###
 
 Sample variables set up prior to execution with default values, so that tests can be run in PostMan app as well as on the newman runner with CSV file 
 <img width="597" alt="image" src="https://github.com/user-attachments/assets/af5f229f-d817-4a26-9115-e303dc4c6e3c" />
